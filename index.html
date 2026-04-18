@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,20 +7,72 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Lato:wght@300&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Lato', sans-serif; background-color: #fcfaf8; color: #4a4a4a; text-align: center; margin: 0; padding: 20px; }
-        h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-top: 50px; color: #8d7d77; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-top: 20px; color: #8d7d77; }
         .form-container { margin-top: 40px; }
         iframe { border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border: none; max-width: 100%; }
+        
+        /* Language Button Styling */
+        .lang-switch {
+            display: flex;
+            justify-content: flex-end;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #langBtn {
+            background-color: #8d7d77;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-family: 'Lato', sans-serif;
+            cursor: pointer;
+            border-radius: 20px;
+            transition: background 0.3s;
+        }
+        #langBtn:hover {
+            background-color: #6e5f5a;
+        }
     </style>
 </head>
 <body>
 
-    <h1>Laukiame jūsų mūsų vėstuvėse!</h1>
-    <p>Kviečiame užpildyti šį trumpą klausimyną iki 2026.06.25 dienos.</p>
+    <div class="lang-switch">
+        <button id="langBtn" onclick="toggleLanguage()">English</button>
+    </div>
+
+    <h1 id="title">Laukiame jūsų mūsų vestuvėse!</h1>
+    <p id="subtitle">Kviečiame užpildyti šį trumpą klausimyną iki 2026.06.25 dienos.</p>
 
     <div class="form-container">
-        <iframe src="https://forms.gle/n8fxnc4xTEZbRmyb6" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe id="formFrame" src="https://forms.gle/n8fxnc4xTEZbRmyb6" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Kraunama…</iframe>
+    </div>
 
-        </div>
+    <script>
+        let currentLang = 'lt';
+
+        function toggleLanguage() {
+            const title = document.getElementById('title');
+            const subtitle = document.getElementById('subtitle');
+            const btn = document.getElementById('langBtn');
+            const frame = document.getElementById('formFrame');
+
+            if (currentLang === 'lt') {
+                // Switch to English
+                title.innerText = "We look forward to seeing you at our wedding!";
+                subtitle.innerText = "Please fill out this short questionnaire by June 25, 2026.";
+                btn.innerText = "Lietuvių";
+                // REPLACE THE LINK BELOW WITH YOUR ENGLISH FORM LINK
+                frame.src = "https://forms.gle/ENTER_ENGLISH_FORM_LINK_HERE"; 
+                currentLang = 'en';
+            } else {
+                // Switch back to Lithuanian
+                title.innerText = "Laukiame jūsų mūsų vestuvėse!";
+                subtitle.innerText = "Kviečiame užpildyti šį trumpą klausimyną iki 2026.06.25 dienos.";
+                btn.innerText = "English";
+                frame.src = "https://forms.gle/n8fxnc4xTEZbRmyb6";
+                currentLang = 'lt';
+            }
+        }
+    </script>
 
 </body>
 </html>
