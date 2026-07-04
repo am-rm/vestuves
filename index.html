@@ -137,31 +137,27 @@
         <div id="dienos-info-tab" class="tab-content">
             <h2 id="info-heading">Dienos informacija</h2>
             <div id="info-text">
-                <h3>Planas</h3>
+                <h3 id="plan-title">Planas</h3>
                 <ul>
-                    <li> Šeštadienis
+                    <li id="sat-text"> Šeštadienis
                         <ul class="info-list">
-                            <li><strong>13:00</strong> – Ceremonija (<a href="https://www.google.com/maps/place/Church+of+the+Discovery+of+the+Holy+Cross/@54.7419041,25.2859628,15.67z/data=!4m6!3m5!1s0x46dd91237808609f:0x189b02593a1e4789!8m2!3d54.740527!4d25.2798099!16s%2Fg%2F122n60w_?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D"">Kalvarijų bažnyčioje</a>)</li>
-                            <li><strong>~14:00-15:00</strong> – Šampano staliukas (prie bažnyčios) </li>
-                            <li><strong>16:30</strong> – Vakarinė dalis (Viloje OM)  </li>
-                            
+                            <li><strong>13:00</strong> – Ceremonija (<a id="church-link" href="https://www.google.com/maps/place/Church+of+the+Discovery+of+the+Holy+Cross/@54.7419041,25.2859628,15.67z/data=!4m6!3m5!1s0x46dd91237808609f:0x189b02593a1e4789!8m2!3d54.740527!4d25.2798099!16s%2Fg%2F122n60w_?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Kalvarijų bažnyčioje</a>)</li>
+                            <li id="champagne-text"><strong>~14:00-15:00</strong> – Šampano staliukas (prie bažnyčios)</li>
+                            <li id="evening-text"><strong>16:30</strong> – Vakarinė dalis (Viloje OM)</li>
                         </ul>
                     </li>  
-                    <li> Sekmadienis
+                    <li id="sun-text"> Sekmadienis
                         <ul class="info-list">
-
-                            <li><strong><15:00</strong> –Išvykimas iš Vilos OM </li>
-                            
+                            <li id="checkout-text"><strong>&lt;15:00</strong> – Išvykimas iš Vilos OM</li>
                         </ul>
+                    </li>
                 </ul>
 
-                <h3>Ko reikėtų vakarinei daliai</h3>
-                <p>Vakarinei daliai verta apsirengti patogiai (t.y. aukštakulnius mainyti į tai, kas tiktų laikui gamtoje). <br>
-                        Nusimato šokiai, ežeras, naktį - kubilas, galima ir valtimi paplaukyti ar aktyvių sporto veiklų rasti. <br>
-                        Sekmadienį iš patalpų reiks išsikelti iki 15h, tad galima nusiteikti dar pabūti, papoilsiauti. <br>
-
-                        
-                    </p>
+                <h3 id="needs-title">Ko reikėtų vakarinei daliai</h3>
+                <p id="needs-desc">Vakarinei daliai verta apsirengti patogiai (t.y. aukštakulnius mainyti į tai, kas tiktų laikui gamtoje). <br>
+                    Nusimato šokiai, ežeras, naktį - kubilas, galima ir valtimi paplaukyti ar aktyvių sporto veiklų rasti. <br>
+                    Sekmadienį iš patalpų reiks išsikelti iki 15h, tad galima nusiteikti dar pabūti, papoilsiauti.
+                </p>
             </div>
         </div>
 
@@ -174,7 +170,6 @@
                 <strong>Alternatyvus variantas:</strong> Jei nepavyksta susikombinuoti tiesioginio transporto, galima nuvažiuoti iki Trakų, o nuo ten paimti taksi (kaina apie 19 EUR). Kooperuokitės šiai kelionei kartu!
             </div>
 
-            <!-- Įrašykite savo Google Sheets nuorodą vietoje # -->
             <center>
                 <a href="https://docs.google.com/spreadsheets/d/1hI36qVBIczL3dJ-4TKQVCidsdBJF39Fbz8zKioFV4Uk/edit?usp=sharing" target="_blank" class="btn-link" id="excel-btn">Atidaryti transporto lentelę</a>
             </center>
@@ -186,63 +181,39 @@
             <p id="links-p">Nuorodos, kaip nuvažiuoti iki šventės vietos ir kiti svarbūs adresai:</p>
             
             <ul class="info-list">
-                <!-- Įrašykite tikras nuorodas į Google Maps -->
                 <li><a href="https://www.google.com/maps/place/Church+of+the+Discovery+of+the+Holy+Cross/@54.7419041,25.2859628,15.67z/data=!4m6!3m5!1s0x46dd91237808609f:0x189b02593a1e4789!8m2!3d54.740527!4d25.2798099!16s%2Fg%2F122n60w_?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" id="link-ceremony">Ceremonijos vieta (Google Maps)</a></li>
-                <li><a href="https://www.google.com/maps/place/Vila+Om/@54.6043957,24.7346657,16.72z/data=!4m6!3m5!1s0x46ddf77df9372939:0x800e68daa0932f5c!8m2!3d54.6045559!4d24.7378117!16s%2Fg%2F11fvb80967?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" id="link-party">Šventės vieta (Google Maps)</a>
-                <h3>Kaip rasti Vila Om 😊</h3>
-                <p>
-                    
-                <br>
+                <li><a href="https://www.google.com/maps/place/Vila+Om/@54.6043957,24.7346657,16.72z/data=!4m6!3m5!1s0x46ddf77df9372939:0x800e68daa0932f5c!8m2!3d54.6045559!4d24.7378117!16s%2Fg%2F11fvb80967?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank" id="link-party">Šventės vieta (Google Maps)</a></li>
+            </ul>
+
+            <h3 id="waze-title">Kaip rasti Vila Om 😊</h3>
+            <p id="waze-desc">
                 Gerai veda TIK WAZE navigacija, kitos klaidina. <br>
                 Veskite Vila Om. <br>
                 Arba skaitykite važiavimo instrukciją.<br>
                 <br>
-                Jei  važiuosite iš Vilniaus link Trakų, tuomet pagrindiniame Trakų žiede prie autobusų stoties paskutinis išsukimas link Aukštadvario ir tada 43 kilometre bus nuokalnė žemyn ir nuokalnės apačioje ženklas Bagdononys 5 į dešinę, ten ir sukite, (nuo čia jau galite jungti navigaciją, veskite Vila Om) už 1 km bus medinis kryžius ir ženklas šalutinis kelias dešiniau vos vos, sukite ten ir važiuokite tiesiai 2 km, pravažiuosite upelį pakilsite į kalną, po dešine bus ežeras ir kelio gale rasite Vila Om, arba galima vesti Vila Om į maps tik posūkis į dešinę kelyje Trakai - Aukštadvaris ne ten kur rodo bet Bagdononys 5 nuokalnės apačioje. Jei suksite anksčiau navigacija ves per labai ekstremalų kelią 😁 Bandykite tik tuo atveju jei važiuojate su visureigiu kurio tikrai negaila ir norite išbandyti pravažumą
-                </p>
-                </li>
-            </ul>
+                Jei  važiuosite iš Vilniaus link Trakų, tuomet pagrindiniame Trakų žiede prie autobusų stoties paskutinis išsukimas link Aukštadvario ir tada 43 kilometre bus nuokalnė žemyn ir nuokalnės apačioje ženklas Bagdononys 5 į dešinę, ten ir sukite, (nuo čia jau galite jungti navigaciją, veskite Vila Om) už 1 km bus medinis kryžius ir ženklas šalutinis kelias dešiniau vos vos, sukite then ir važiuokite tiesiai 2 km, pravažiuosite upelį pakilsite į kalną, po dešine bus ežeras ir kelio gale rasite Vila Om, arba galima vesti Vila Om į maps tik posūkis į dešinę kelyje Trakai - Aukštadvaris ne then kur rodo bet Bagdononys 5 nuokalnės apačioje. Jei suksite anksčiau navigacija ves per labai ekstremalų kelią 😁 Bandykite tik tuo atveju jei važiuojate su visureigiu kurio tikrai negaila ir norite išbandyti pravažumą
+            </p>
         </div>
 
         <!-- 5 SKILTIS: Sutartinės -->
         <div id="sutartines-tab" class="tab-content">
             <h2 id="songs-heading">Sutartinių tekstai</h2>
             <p id="songs-p">Čia rasite dainų bei sutartinių tekstus, kuriais dalinsimės šventės metu:</p>
-
-            <!--
-            <h3>Sutartinė „Lioj dūno upė“</h3>
-            <div class="song-text">
-                Lioj dūno upė, lioj dūno,
-                Sodai sodai, lioj dūno.
-                Auga sode obelėlė, lioj dūno,
-                Su visom šakelėm, lioj dūno.
-            </div>
-
-            <h3>Kita daina</h3>
-            <div class="song-text">
-                (Čia galite įrašyti kitos dainos ar sutartinės žodžius...)
-            </div>
-
-            -->
         </div>
     </div>
 
     <script>
         let currentLang = 'lt';
 
-        // Skilčių perjungimo logika
         function switchTab(tabId) {
-            // Paslepiam visus tabus
             const tabs = document.querySelectorAll('.tab-content');
             tabs.forEach(tab => tab.classList.remove('active'));
             
-            // Nuimam active klasę nuo visų meniu mygtukų
             const buttons = document.querySelectorAll('.nav-btn');
             buttons.forEach(btn => btn.classList.remove('active'));
             
-            // Parodom pasirinktą tabą ir aktyvuojam mygtuką
             document.getElementById(tabId + '-tab').classList.add('active');
             
-            // Surandame kurį mygtuką paspaudė pagal tabId
             const btnMap = {
                 'klausimynas': 'menu-rsvp',
                 'dienos-info': 'menu-info',
@@ -253,97 +224,148 @@
             document.getElementById(btnMap[tabId]).classList.add('active');
         }
 
-        // Kalbų perjungimo logika
         function toggleLanguage() {
             const btn = document.getElementById('langBtn');
             const subtitle = document.getElementById('subtitle');
             const frame = document.getElementById('formFrame');
             
-            // Meniu punktai
+            // Menu
             const mRsvp = document.getElementById('menu-rsvp');
             const mInfo = document.getElementById('menu-info');
             const mTransport = document.getElementById('menu-transport');
             const mLinks = document.getElementById('menu-links');
             const mSongs = document.getElementById('menu-songs');
 
-            // Skilčių tekstai
+            // Tab 2 Elements
             const infoHeading = document.getElementById('info-heading');
-            const infoText = document.getElementById('info-text');
+            const planTitle = document.getElementById('plan-title');
+            const satText = document.getElementById('sat-text');
+            const churchLink = document.getElementById('church-link');
+            const champagneText = document.getElementById('champagne-text');
+            const eveningText = document.getElementById('evening-text');
+            const sunText = document.getElementById('sun-text');
+            const checkoutText = document.getElementById('checkout-text');
+            const needsTitle = document.getElementById('needs-title');
+            const needsDesc = document.getElementById('needs-desc');
+
+            // Tab 3 Elements
             const transportHeading = document.getElementById('transport-heading');
             const transportP1 = document.getElementById('transport-p1');
             const transportNotice = document.getElementById('transport-notice');
             const excelBtn = document.getElementById('excel-btn');
+
+            // Tab 4 Elements
             const linksHeading = document.getElementById('links-heading');
             const linksP = document.getElementById('links-p');
             const linkCeremony = document.getElementById('link-ceremony');
             const linkParty = document.getElementById('link-party');
+            const wazeTitle = document.getElementById('waze-title');
+            const wazeDesc = document.getElementById('waze-desc');
+
+            // Tab 5 Elements
             const songsHeading = document.getElementById('songs-heading');
             const songsP = document.getElementById('songs-p');
 
             if (currentLang === 'lt') {
-                // Pakeičiam į Anglų
                 btn.innerText = "Lietuvių";
-                subtitle.innerText = "Please fill out this short questionnaire by June 25, 2026.";
-                frame.src = "https://forms.gle/UYHByhQnPHRsxr9AA"; // Angliška forma
+                subtitle.innerText = "We kindly invite you to fill out this short questionnaire.";
+                frame.src = "https://forms.gle/UYHByhQnPHRsxr9AA"; 
                 
                 mRsvp.innerText = "Questionnaire";
                 mInfo.innerText = "Day Info";
                 mTransport.innerText = "Transport / Excel";
                 mLinks.innerText = "Directions";
-                mSongs.innerText = "Songs";
+                mSongs.innerText = "Traditional Songs";
 
+                // Tab 2 English
                 infoHeading.innerText = "Information About the Day";
-                infoText.innerHTML = `<p>Your details about the wedding day will go here. You can list a timeline, dress code, or other notes.</p>
-                <ul class="info-list">
-                    <li><strong>12:00</strong> – Welcoming guests</li>
-                    <li><strong>13:00</strong> – Ceremony</li>
-                    <li><strong>15:00</strong> – Dinner</li>
-                </ul>`;
+                planTitle.innerText = "Schedule";
+                satText.innerHTML = `Saturday
+                    <ul class="info-list">
+                        <li><strong>13:00</strong> – Ceremony (at <a id="church-link" href="https://www.google.com/maps/place/Church+of+the+Discovery+of+the+Holy+Cross/@54.7419041,25.2859628,15.67z/data=!4m6!3m5!1s0x46dd91237808609f:0x189b02593a1e4789!8m2!3d54.740527!4d25.2798099!16s%2Fg%2F122n60w_?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Kalvarijos Church</a>)</li>
+                        <li><strong>~14:00-15:00</strong> – Champagne table (at the church)</li>
+                        <li><strong>16:30</strong> – Evening celebration (at Vila OM)</li>
+                    </ul>`;
+                sunText.innerHTML = `Sunday
+                    <ul class="info-list">
+                        <li><strong>&lt;15:00</strong> – Departure from Vila OM</li>
+                    </ul>`;
+                needsTitle.innerText = "What to bring / wear for the evening part";
+                needsDesc.innerHTML = `For the evening part, it is worth dressing comfortably (i.e., swapping high heels for something suitable for spending time outdoors). <br>
+                    Expect dancing, a lake, a hot tub at night, options for boating, or active sports activities. <br>
+                    On Sunday, we need to check out of the rooms by 15:00, so feel free to stay, hang out, and relax until then.`;
 
+                // Tab 3 English
                 transportHeading.innerText = "Transport Coordination";
-                transportP1.innerText = "To ensure everyone can smoothly reach the venue and return home, we created a shared sheet. Here you can mark who is driving, who needs a ride, and help each other (including our international guests!).";
-                transportNotice.innerHTML = "<strong>Alternative option:</strong> If you cannot find a direct ride, you can travel to Trakai and take a taxi from there (approx. 19 EUR). Feel free to group up for this option!";
+                transportP1.innerText = "To ensure everyone can smoothly reach the venue and return home, we created a shared sheet. Here you can mark who is driving, who needs a ride, and help each other out (including our international guests!).";
+                transportNotice.innerHTML = "<strong>Alternative option:</strong> If you cannot arrange a direct ride, you can travel to Trakai and take a taxi from there (approx. 19 EUR). Feel free to group up for this trip together!";
                 excelBtn.innerText = "Open Transport Sheet";
 
+                // Tab 4 English
                 linksHeading.innerText = "Useful Links";
                 linksP.innerText = "Directions to the venue and other important addresses:";
                 linkCeremony.innerText = "Ceremony Location (Google Maps)";
                 linkParty.innerText = "Venue Location (Google Maps)";
+                wazeTitle.innerText = "How to find Vila Om 😊";
+                wazeDesc.innerHTML = `ONLY the WAZE navigation works well; others are misleading. <br>
+                    Search for "Vila Om". <br>
+                    Or read the driving directions below.<br>
+                    <br>
+                    If you are driving from Vilnius towards Trakai, take the last exit towards Aukštadvaris at the main Trakai roundabout near the bus station. Then, at the 43rd kilometer mark, the road goes downhill. At the bottom of the slope, take a right turn at the "Bagdononys 5" sign. Turn there (from this point you can turn on navigation and enter Vila Om). After 1 km, you will see a wooden cross and a sign indicating a very slight fork/side road to the right. Turn there and drive straight for 2 km. You will pass a small stream, head up a hill, see a lake on your right, and find Vila Om at the end of the road. Alternatively, you can type Vila Om into maps, but make sure the right turn on the Trakai - Aukštadvaris road is at the bottom of the hill at "Bagdononys 5", not where other maps show. If you turn earlier, navigation will lead you through a highly extreme off-road route 😁 Only try that if you are driving an SUV that you really don't mind damaging and want to test its off-road capabilities.`;
 
+                // Tab 5 English
                 songsHeading.innerText = "Traditional Songs";
                 songsP.innerText = "Here you will find the lyrics for the songs and \"sutartinės\" we will share during the celebration:";
 
                 currentLang = 'en';
             } else {
-                // Pakeičiam atgal į Lietuvių
                 btn.innerText = "English";
-                subtitle.innerText = "Kviečiame užpildyti šį trumpą klausimyną iki 2026.06.25 dienos.";
-                frame.src = "https://forms.gle/n8fxnc4xTEZbRmyb6"; // Lietuviška forma
+                subtitle.innerText = "Kviečiame užpildyti šį trumpą klausimyną.";
+                frame.src = "https://forms.gle/n8fxnc4xTEZbRmyb6";
                 
                 mRsvp.innerText = "Klausimynas";
                 mInfo.innerText = "Dienos informacija";
                 mTransport.innerText = "Transportas / Excel";
-                mLinks.innerText = "Nuorodos";
+                mLinks.innerText = "Kaip nuvykti";
                 mSongs.innerText = "Sutartinės";
 
+                // Tab 2 Lithuanian
                 infoHeading.innerText = "Dienos informacija";
-                infoText.innerHTML = `<p>Čia bus jūsų paruošti punktai apie vestuvių dieną. Galite surašyti preliminarų planą, aprangos kodą ar kitus svarbius akcentus.</p>
-                <ul class="info-list">
-                    <li><strong>12:00</strong> – Svečių sutikimas</li>
-                    <li><strong>13:00</strong> – Ceremonija</li>
-                    <li><strong>15:00</strong> – Šventinė vakarienė</li>
-                </ul>`;
+                planTitle.innerText = "Planas";
+                satText.innerHTML = `Šeštadienis
+                    <ul class="info-list">
+                        <li><strong>13:00</strong> – Ceremonija (<a id="church-link" href="https://www.google.com/maps/place/Church+of+the+Discovery+of+the+Holy+Cross/@54.7419041,25.2859628,15.67z/data=!4m6!3m5!1s0x46dd91237808609f:0x189b02593a1e4789!8m2!3d54.740527!4d25.2798099!16s%2Fg%2F122n60w_?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Kalvarijų bažnyčioje</a>)</li>
+                        <li><strong>~14:00-15:00</strong> – Šampano staliukas (prie bažnyčios)</li>
+                        <li><strong>16:30</strong> – Vakarinė dalis (Viloje OM)</li>
+                    </ul>`;
+                sunText.innerHTML = `Sekmadienis
+                    <ul class="info-list">
+                        <li><strong>&lt;15:00</strong> – Išvykimas iš Vilos OM</li>
+                    </ul>`;
+                needsTitle.innerText = "Ko reikėtų vakarinei daliai";
+                needsDesc.innerHTML = `Vakarinei daliai verta apsirengti patogiai (t.y. aukštakulnius mainyti į tai, kas tiktų laikui gamtoje). <br>
+                    Nusimato šokiai, ežeras, naktį - kubilas, galima ir valtimi paplaukyti ar aktyvių sporto veiklų rasti. <br>
+                    Sekmadienį iš patalpų reiks išsikelti iki 15h, tad galima nusiteikti dar pabūti, papoilsiauti.`;
 
+                // Tab 3 Lithuanian
                 transportHeading.innerText = "Transporto koordinavimas";
                 transportP1.innerText = "Siekdami, kad visi patogiai pasiektų šventės vietą ir grįžtų namo, sukūrėme bendrą lentelę. Čia galite pažymėti, kas vairuoja, kas ieško vietos automobilyje, bei padėti vieni kitiems (taip pat ir svečiams iš užsienio!).";
                 transportNotice.innerHTML = "<strong>Alternatyvus variantas:</strong> Jei nepavyksta susikombinuoti tiesioginio transporto, galima nuvažiuoti iki Trakų, o nuo ten paimti taksi (kaina apie 19 EUR). Kooperuokitės šiai kelionei kartu!";
                 excelBtn.innerText = "Atidaryti transporto lentelę";
 
+                // Tab 4 Lithuanian
                 linksHeading.innerText = "Naudingos nuorodos";
-                linksP.innerText = "Nuorodos, kaip nuvažiuoti iki šventės vietos ir kiti svarbusi adresai:";
+                linksP.innerText = "Nuorodos, kaip nuvažiuoti iki šventės vietos ir kiti svarbūs adresai:";
                 linkCeremony.innerText = "Ceremonijos vieta (Google Maps)";
                 linkParty.innerText = "Šventės vieta (Google Maps)";
+                wazeTitle.innerText = "Kaip rasti Vila Om 😊";
+                wazeDesc.innerHTML = `Gerai veda TIK WAZE navigacija, kitos klaidina. <br>
+                    Veskite Vila Om. <br>
+                    Arba skaitykite važiavimo instrukciją.<br>
+                    <br>
+                    Jei  važiuosite iš Vilniaus link Trakų, tuomet pagrindiniame Trakų žiede prie autobusų stoties paskutinis išsukimas link Aukštadvario ir tada 43 kilometre bus nuokalnė žemyn ir nuokalnės apačioje ženklas Bagdononys 5 į dešinę, then ir sukite, (nuo čia jau galite jungti navigaciją, veskite Vila Om) už 1 km bus medinis kryžius ir ženklas šalutinis kelias dešiniau vos vos, sukite then ir važiuokite tiesiai 2 km, pravažiuosite upelį pakilsite į kalną, po dešine bus ežeras ir kelio gale rasite Vila Om, arba galima vesti Vila Om į maps tik posūkis į dešinę kelyje Trakai - Aukštadvaris ne then kur rodo bet Bagdononys 5 nuokalnės apačioje. Jei suksite anksčiau navigacija ves per labai ekstremalų kelią 😁 Bandykite tik tuo atveju jei važiuojate su visureigiu kurio tikrai negaila ir norite išbandyti pravažumą`;
 
+                // Tab 5 Lithuanian
                 songsHeading.innerText = "Sutartinių tekstai";
                 songsP.innerText = "Čia rasite dainų bei sutartinių tekstus, kuriais dalinsimės šventės metu:";
 
