@@ -165,10 +165,13 @@
         </div>
 
         <!-- 3 SKILTIS: Transportas -->
+
         <div id="transportas-tab" class="tab-content">
-            <h2 id="transport-heading">Transporto koordinavimas</h2>
-            <p id="transport-p1">Kad visi patogiai pasiektų šventės vietą ir grįžtų namo, sukūrėme bendrą lentelę. Čia galite pažymėti, kas vairuoja, kas ieško vietos automobilyje, bei padėti vieni kitiems (taip pat ir svečiams iš užsienio!). Taip pat, komunikavimui palengvinti, esate sudėti į messenger'io grupę, kurioje turėtumėt rasti vieni kitus.</p>
-            
+            transportHeading.innerText = "Transporto koordinavimas";
+                transportP1.innerText = "Kad visi patogiai pasiektų šventės vietą ir grįžtų namo, sukūrėme bendrą lentelę. Čia galite pažymėti, kas vairuoja, kas ieško vietos automobilyje, bei padėti vieni kitiems (taip pat ir svečiams iš užsienio!).";
+                transportNotice.innerHTML = "<strong>Alternatyvus variantas:</strong> Jei nepavyksta susikombinuoti tiesioginio transporto, galima nuvažiuoti iki Trakų, o nuo ten paimti taksi (kaina nuo 12.5 EUR). Kooperuokitės šiai kelionei kartu!";
+                transportNotice.innerHTML = "Taip pat galima vykti viešuoju transportu, autobusu Vilnius-Strėva arba Trakai-Strėva. Nuo Strėvos jau visai netoli iki sodybos, rasime, kas jus pametėtų. Tačiau, dėl nedažno autobusų kursavimo, šį variantą siūlome sekmadieniui, ne šeštadieniui.";
+                excelBtn.innerText = "Atidaryti transporto lentelę";
             <div class="notice-box" id="transport-notice">
                 <strong>Alternatyvus variantas:</strong> Jei nepavyksta susikombinuoti tiesioginio transporto, galima nuvažiuoti iki Trakų, o nuo ten paimti taksi (kaina apie 19 EUR). Kooperuokitės šiai kelionei kartu!
             </div>
