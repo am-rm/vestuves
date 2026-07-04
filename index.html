@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AM-RM vestuvės</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Updated Google Fonts link to explicitly include the Latin-Extended subset for Lithuanian letters -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap&subset=latin,latin-ext" rel="stylesheet">
     <style>
         body { font-family: 'Lato', sans-serif; background-color: #fcfaf8; color: #4a4a4a; text-align: center; margin: 0; padding: 20px; }
         h1 { font-family: 'Playfair Display', serif; font-size: 3rem; margin-top: 20px; color: #8d7d77; }
@@ -118,23 +119,23 @@
         
         <!-- Navigacijos Meniu -->
         <div class="nav-menu">
-            <button class="nav-btn active" onclick="switchTab('klausimynas')" id="menu-rsvp">Klausimynas</button>
-            <button class="nav-btn" onclick="switchTab('dienos-info')" id="menu-info">Dienos informacija</button>
+            <button class="nav-btn" onclick="switchTab('klausimynas')" id="menu-rsvp">Klausimynas</button>
+            <button class="nav-btn active" onclick="switchTab('dienos-info')" id="menu-info">Dienos informacija</button>
             <button class="nav-btn" onclick="switchTab('transportas')" id="menu-transport">Transportas / Excel</button>
             <button class="nav-btn" onclick="switchTab('nuorodos')" id="menu-links">Kaip nuvykti</button>
             <button class="nav-btn" onclick="switchTab('sutartines')" id="menu-songs">Sutartinės</button>
         </div>
 
         <!-- 1 SKILTIS: Klausimynas -->
-        <div id="klausimynas-tab" class="tab-content active">
+        <div id="klausimynas-tab" class="tab-content">
             <p id="subtitle">Kviečiame užpildyti šį trumpą klausimyną.</p>
             <div class="form-container">
                 <iframe id="formFrame" src="https://forms.gle/n8fxnc4xTEZbRmyb6" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Kraunama…</iframe>
             </div>
         </div>
 
-        <!-- 2 SKILTIS: Dienos informacija -->
-        <div id="dienos-info-tab" class="tab-content">
+        <!-- 2 SKILTIS: Dienos informacija (Now active by default) -->
+        <div id="dienos-info-tab" class="tab-content active">
             <h2 id="info-heading">Dienos informacija</h2>
             <div id="info-text">
                 <h3 id="plan-title">Planas</h3>
@@ -164,7 +165,7 @@
         <!-- 3 SKILTIS: Transportas -->
         <div id="transportas-tab" class="tab-content">
             <h2 id="transport-heading">Transporto koordinavimas</h2>
-            <p id="transport-p1">Siekdami, kad visi patogiai pasiektų šventės vietą ir grįžtų namo, sukūrėme bendrą lentelę. Čia galite pažymėti, kas vairuoja, kas ieško vietos automobilyje, bei padėti vieni kitiems (taip pat ir svečiams iš užsienio!).</p>
+            <p id="transport-p1">Siekdami, kad visi patogiai pasiektų šventės vietą ir grįžtų namo, sukūrėme bendrą lentelę. Chi galite pažymėti, kas vairuoja, kas ieško vietos automobilyje, bei padėti vieni kitiems (taip pat ir svečiams iš užsienio!).</p>
             
             <div class="notice-box" id="transport-notice">
                 <strong>Alternatyvus variantas:</strong> Jei nepavyksta susikombinuoti tiesioginio transporto, galima nuvažiuoti iki Trakų, o nuo ten paimti taksi (kaina apie 19 EUR). Kooperuokitės šiai kelionei kartu!
@@ -240,11 +241,9 @@
             const infoHeading = document.getElementById('info-heading');
             const planTitle = document.getElementById('plan-title');
             const satText = document.getElementById('sat-text');
-            const churchLink = document.getElementById('church-link');
             const champagneText = document.getElementById('champagne-text');
             const eveningText = document.getElementById('evening-text');
             const sunText = document.getElementById('sun-text');
-            const checkoutText = document.getElementById('checkout-text');
             const needsTitle = document.getElementById('needs-title');
             const needsDesc = document.getElementById('needs-desc');
 
